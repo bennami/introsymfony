@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FormController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+    <div class="container">
+        <form method="post">
+            <div class="form-group mt-5">
+                <h1>Welcome to this weird site, enter a name!</h1>
+                <input type="name" class="form-control" name="name" placeholder="Enter Name" required>
+            </div>
+
+            <button type="submit" name="submitName" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+{% endblock %}
